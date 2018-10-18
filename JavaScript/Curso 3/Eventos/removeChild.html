@@ -1,0 +1,31 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>DOM - removeChild</title>
+    
+</head>
+<body>
+
+    <div id="Volkswagem">
+
+    </div>
+
+        <script>
+
+            // Itens da aula passada
+            var fox = document.createElement("p");
+            fox.innerHTML = "Fox";
+
+            var polo = document.createElement("p");
+            polo.innerHTML = "Polo";
+
+            document.getElementById("Volkswagem").appendChild(fox);
+            document.getElementById("Volkswagem").appendChild(polo);
+            
+            // Removendo elemento criado
+            document.getElementById("Volkswagem").removeChild(fox);
+            
+        </script>
+</body>
+</html>

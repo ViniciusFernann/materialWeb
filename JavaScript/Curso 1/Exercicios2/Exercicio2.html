@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exercicios2 - Modulo2</title>
+</head>
+        
+    <body>
+               
+            
+        <button id="new">Novo quadrado</button>   
+
+
+        <div id="quadrado1"></div>
+
+        <script>
+
+            var btnElement = document.getElementById("new");
+            var quadrElement = document.getElementById("quadrado1");
+
+            function getRandomColor() {
+                var letters = "0123456789ABCDEF";
+                var color = "#";
+
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+                
+
+            btnElement.onclick = function(){
+                var quadrado = document.createElement('div');
+
+                quadrado.style.width = '100px';
+                quadrado.style.height = '100px';
+                quadrado.style.backgroundColor = '#f00';
+
+
+                quadrado.onmouseover = function () {
+                    quadrado.style.backgroundColor = getRandomColor();
+                }
+
+                quadrElement.appendChild(quadrado);
+            }
+
+
+            // var newColor = getRandomColor(); // #E943F0
+
+                
+        </script>
+    </body>
+</html>
+    
+    
+    
+    
+    
+    
+    

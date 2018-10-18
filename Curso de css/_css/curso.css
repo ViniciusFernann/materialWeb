@@ -1,0 +1,20 @@
+body {
+    /* background-image: url("../_imagens/theguy.jpg");
+    /* Largura e altura */
+    /*background-size: 500px 500px;
+
+    /* Repetição da imagem*/
+
+    /* background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+    /*background-repeat: no-repeat;
+
+    background-position: 700px 0px; */
+}
+
+.teste {
+    text-align: right;
+    border:#000 solid 1px;
+    display:inline-block;
+}

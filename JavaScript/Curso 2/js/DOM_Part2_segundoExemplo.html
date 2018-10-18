@@ -1,0 +1,30 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Aula DOM parte 2</title>
+</head>
+<body>
+    <div id="msg">
+
+    </div>
+    <input type="button" value="Avancar" onclick="window.history.forward()"/>
+    <input type="button" value="voltar" onclick="window.history.back()"/>
+
+    <script>
+        // é utilizado para manter uma informação permanentemente no navegador do usuário
+            // window.localStorage.setItem('info1', 'Esse valor é permantente no navegador');
+            // document.getElementById('msg').innerHTML = window.localStorage.getItem('info1');
+
+        // Esse comando permite que os dados ficam salvo somente até o usuário encerrar o navegador.
+            // window.sessionStorage.setItem('info2', 'Esse valor some sempre fechar o navegador');
+            // document.getElementById('msg').innerHTML = window.sessionStorage.getItem('info2');
+
+        // Comando utilizado para abrir novas janelas do navegador
+        const janela = window.open('http://google.com', '', 'width=500, height=400');
+        // janela.document.write('Esse é um texto para minha janela');
+
+
+    </script>
+</body>
+</html>

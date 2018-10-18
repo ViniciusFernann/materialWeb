@@ -1,0 +1,51 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Repetições</title>
+
+
+</head>
+<body>
+
+    <div class="js">react</div>
+    <div class="js">angulas</div>
+    <div class="js">typescript</div>
+    <div class="js">es6</div>
+
+    <script>
+    // --------------------------- FOR -----------------------------------------------------        
+        var js = document.getElementsByClassName('js');
+
+        for (let i = 0; i < js.length; i++){
+            let texto = js[i].innerHTML;
+            js[i].innerHTML = 'Curso ' + texto + ' js';
+        }
+
+    
+    // --------------------------- forEach -----------------------------------------------------  
+    var array = [1,2,'b',3];
+
+    array.forEach(function(element, index) {
+        if (element === 1){
+            array[index] = 'vira outra coisa'
+        }
+    })
+
+    console.log(array);
+
+    // --------------------------- Map ----------------------------------------------------- 
+    var array = [1,2,'b',3];
+
+    var nova = array.map(function(element, index) {
+        if (element === 1){
+            element = 'outra coisa'
+        }
+        return element;
+    })
+
+    console.log(nova);
+    </script>
+    
+</body>
+</html> 

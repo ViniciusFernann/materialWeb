@@ -1,0 +1,45 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Variáveis</title>
+
+
+</head>
+<body>
+
+    <script>
+        
+        // var é utilizado em escopo global
+        var nome = 'Vinicius';
+
+        function teste(){
+            nome = 'Fernandes';
+        }
+
+        teste();
+        console.log(nome);
+        
+        // Porém consigo criar um variavel de escopo global em um ambiente local
+        // Basta não informar nada antes do nome da variavel
+        function teste(){
+            nome = 'Vinicius';
+        }
+
+         teste();
+        console.log(nome);
+
+        // Novo tipo de declarativa local.
+        function teste(){
+            let = 'Vinicius';
+        }
+
+        teste();
+        console.log(nome);
+
+        // Para criar uma variavel que nunca sera modificada, utiliza-se CONST
+        const nome = 'Vinicius';
+    </script>
+    
+</body>
+</html>

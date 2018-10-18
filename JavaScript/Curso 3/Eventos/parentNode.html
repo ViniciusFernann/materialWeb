@@ -1,0 +1,37 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>DOM - parentNode</title>
+    
+</head>
+<body>
+
+    <div id="linux">
+
+        <div class="ubuntu">ubuntu
+            <div class="elementaryos">elementary os</div>
+        </div>
+        <div class="debian">Debian</div>
+
+    </div>
+
+        <script> 
+        
+        console.log(
+
+            // Acessa um determinado pai de algum elemento
+            document.querySelector(".elementaryos").parentNode
+
+            // Acessa o pai do pai (avo)
+            document.querySelector(".elementaryos").parentNode.parentNode
+        
+            // É possivel localizar toda a arvore geneologica, até chegar na tag HTML.
+            document.querySelector(".elementaryos").parentNode.parentNode.parentNode.parentNode
+            
+        );
+
+            
+        </script>
+</body>
+</html>

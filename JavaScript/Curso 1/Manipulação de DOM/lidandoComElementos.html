@@ -1,0 +1,36 @@
+
+<html>
+        <head>
+            <title>Lidando com elementos</title>
+        </head>
+        <body>
+                <div id="app">
+
+                </div>
+            <script>
+                // Criando elementos através do Javascript
+                
+                var linkElement = document.createElement('a');                
+                // Criação do link para acessar site Rocketseat
+                linkElement.setAttribute('href', 'http://rocketseat.com.br');
+                linkElement.setAttribute('title', 'Site da rocketseat');
+                
+                var textElement = document.createTextNode('Acessar site da rocketseat');
+                // Posiciona o texto dentro do elemento através do link
+                linkElement.appendChild(textElement);
+
+                // Joga o link dentro do corpo html
+                var containerElement = document.querySelector('#app');
+                containerElement.appendChild(linkElement);
+
+                
+            </script>
+        </body>
+    </html>
+    
+    
+    
+    
+    
+    
+    

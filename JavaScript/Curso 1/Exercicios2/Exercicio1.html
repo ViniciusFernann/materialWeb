@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exercicios1 - Modulo2</title>
+</head>
+        
+    <body>
+               
+            
+        <button id="new">Novo quadrado</button>   
+
+
+        <div id="quadrado1"></div>
+
+        <script>
+
+            var btnElement = document.getElementById("new");
+            var quadrElement = document.getElementById("quadrado1");
+
+
+            btnElement.onclick = function(){
+                var quadrado = document.createElement('div');
+
+                quadrado.style.width = '100px';
+                quadrado.style.height = '100px';
+                quadrado.style.backgroundColor = '#f00';
+
+
+                quadrElement.appendChild(quadrado);
+            }
+
+                
+        </script>
+    </body>
+</html>
+    
+    
+    
+    
+    
+    
+    

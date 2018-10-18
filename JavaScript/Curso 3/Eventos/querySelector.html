@@ -1,0 +1,29 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>DOM - querySelector</title>
+    
+</head>
+<body>
+    <div id="teste1"></div>
+    <div class="teste2"></div>
+    <p class="teste3">teste 3</p>
+
+        <script>
+            console.log(
+                // Acessar pelo Id
+                document.querySelector("#teste1")
+
+                // Acessar pela classe
+                document.querySelector(".teste2")
+
+                // Acessar pela tag direto
+                document.querySelector("p")
+
+                // Tag mais classe
+                document.querySelector("p.teste3")
+            )
+        </script>
+</body>
+</html>

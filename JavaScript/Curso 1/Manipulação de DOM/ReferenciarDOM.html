@@ -1,0 +1,53 @@
+
+<html>
+        <head>
+            <title>Referenciar DOM</title>
+        </head>
+        <body>
+                <div id="app">
+                    <input type="text" name="nome" id="nome" class="nome"/>
+                    <button class="botao">Adicionar</button>
+                </div>
+            <script>
+                function mostraAlerta(){
+                    // Como referenciar elementos da DOM, pelo Javascript
+                    
+                    // 1ª funcão para referenciar
+                    var inputElement = document.getElementById('nome');
+                    
+                    // 2ª função para referenciar os elementos do BODY
+                    // Essa forma, sempre irá retornar um vetor, mas se quiser passar apenas um input, basta adicionar o [0] no final
+                    var inputElement = document.getElementsByTagName('input');
+
+                    // 3ª função, essa também irá retornar um vetor.
+                    var inputElement = document.getElementsByClassName('input');
+
+                    // 4ª e mais eficiente, pois percorre toda a DOM referenciando os elementos
+                    // Esses exemplos, irá retornar somente um elemento
+                    var inputElement = document. querySelector('div#app input');
+                    var inputElement = document. querySelector('input[name=nome]');
+
+                    // Para retornar mais de um elemento, utilize o exemplo abaixo
+                    var inputElement = document. querySelectorAll('div#app input');
+
+                    // Referenciando elementos onclick, pelo Javascript
+                    var inputElement = document.querySelector('input')
+                    var btnElement = document.querySelector('button');
+
+                    btnElement.onclick = function(){
+                        var text = inputElement.value;
+
+                        alert('Botão foi clicado!');
+                    }
+                    console.log(inputElement);
+                }
+            </script>
+        </body>
+    </html>
+    
+    
+    
+    
+    
+    
+    

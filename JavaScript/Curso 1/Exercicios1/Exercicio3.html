@@ -1,0 +1,24 @@
+
+<html>
+    <head>
+        <title>Exercicio4</title>
+    </head>
+    <body>
+        <script>   
+        //Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript"
+        //e retorna um booleano true/false caso exista ou não.
+        
+            function temHabilidade(skills){
+                // Se o pontoInicial é fornecido com um número negativo,  
+                //é tomado como deslocamento da extremidade do array. 
+                //Nota: se o pontoInicial fornecido é negativo, a procura 
+                //no array acontece de frente para trás. Se o pontoInicial calculado 
+                //é menor que 0, então o array inteiro será pesquisado. Padrão: 0 (pesquisa em todo array).
+               return skills.indexOf('Javascript') !== -1;                    
+            }
+        
+            var skills = ['Javascript', 'ReactJS', 'React Native'];
+            console.log(temHabilidade(skills));
+        </script>
+    </body>
+</html>

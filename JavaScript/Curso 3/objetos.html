@@ -1,0 +1,37 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Objetos</title>
+
+
+</head>
+<body>
+
+    <script>
+        
+        var carro = {
+            placa: 'DHS-9832',
+            cor: 'Preto',
+            modelo: 'Tesla'
+        }
+
+        console.log(carro.modelo);
+
+        // Pode tornar o objeto recursivo, ou seja, varios outros objetos dentro deste
+        
+        var carro = {
+            placa: 'DHS-9832',
+            cor: 'Preto',
+            modelo: 'Tesla',
+            opcionais: {
+                cambio: 'aut.',
+                combustivel: 'Flex'
+            }
+        }
+        console.log(carro.opcionais.cambio);
+
+    </script>
+    
+</body>
+</html>
